@@ -23,7 +23,7 @@ var button3 = Math.floor(Math.random() * (+max - +min)) + +min;
 var button4 = Math.floor(Math.random() * (+max - +min)) + +min;
 
 
-var random = Math.floor(Math.random() * (+randomMax - +randomMin)) + +min;
+var random = Math.floor(Math.random() * (+randomMax - +randomMin)) + +randomMin;
 randomNumber.innerHTML = random
 
 
@@ -36,7 +36,7 @@ update()
 
 
 function newGame(){
-    var random = Math.floor(Math.random() * (+randomMax - +randomMin)) + +min;
+    random = Math.floor(Math.random() * (+randomMax - +randomMin)) + +min;
 randomNumber.innerHTML = random
 
 score = 0;
@@ -56,13 +56,13 @@ function winLoss() {
     if (score === random) {
         alert("You win!")
         wins++
-        newGame()
         update()
+        newGame()
     } else if (score > random) {
         alert("You lose.")
         losses++
-        newGame()
         update()
+        newGame()
     }
 
 }
