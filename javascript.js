@@ -1,12 +1,12 @@
 var randomNumber = document.getElementById("randomNumber")
 
-var randomMin = 20;
+var randomMin = 19;
 
-var randomMax = 50;
+var randomMax = 120;
 
 var min = 1;
 
-var max = 10;
+var max = 12;
 
 var wins = 0;
 
